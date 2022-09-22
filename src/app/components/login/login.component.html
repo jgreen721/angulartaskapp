@@ -1,0 +1,44 @@
+<div class="app">
+  <div class="p-4 text-center text-light bg-primary">
+    <h1>Login App</h1>
+    <h5>
+      Login, create a token-session and view
+      <em class="text-danger"><strong>your</strong></em> Tasks! :)
+    </h5>
+  </div>
+  <div class="p-4 d-flex align-items-center justify-content-center flex-column">
+    <h3 class="my-3 text-danger">
+      <strong>{{ error }}</strong>
+    </h3>
+    <div class="m-5 p-5 border border-dark">
+      <div class="form-div p-2 my-2">
+        <label for="username"><strong>Username:</strong></label>
+        <input
+          class="form-control p-1"
+          type="text"
+          autocomplete="off"
+          name="username"
+          [(ngModel)]="username"
+        />
+      </div>
+      <div class="form-div p-2 my-2">
+        <label for="password"><strong>Password:</strong></label>
+        <input
+          class="form-control p-1"
+          type="text"
+          autocomplete="off"
+          name="password"
+          [(ngModel)]="password"
+        />
+      </div>
+
+      <div class="form-div">
+        <button (click)="handleLogin()" class="btn btn-success">Sign in</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-1 text-center text-light bg-primary">
+    <p>Footer&copy;</p>
+  </div>
+</div>

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,OnInit  } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'authtaskapp';
+
+
+  constructor(private authService:AuthService,private router:Router){}
+
+  ngOnInit(): void {
+    console.log('ngInit fired!')
+    // if(this.authService.checkSession()){
+    //   console.log("User still has active session!")
+    //   this.router.navigate([""])
+    // }
+    // else{
+    // this.router.navigate(["login"]);
+    // }
+  }
 }

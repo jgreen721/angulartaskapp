@@ -1,0 +1,44 @@
+<div class="app">
+  <div class="bg-dark text-light text-center p-4">
+    <h1>Welcome to your Dashboard!</h1>
+    <div class="d-flex align-items-center justify-content-between">
+      <div>
+        <h4>{{ user.username }}</h4>
+        <h5>
+          <a href="#">{{ user.email }}</a>
+        </h5>
+      </div>
+      <a (click)="handleLogout()" href="#">Logout</a>
+    </div>
+  </div>
+  <div>
+    <ul *ngIf="tasks.length">
+      <li
+        class="d-flex align-items justify-center-between p-2"
+        *ngFor="let task of tasks"
+      >
+        <h4>{{ task.task }}</h4>
+
+        <div>
+          <button
+            [className]="
+              task.is_complete ? 'badge bg-info' : 'badge bg-warning'
+            "
+          >
+            {{ task.is_complete ? "Undo" : "Finish" }}
+          </button>
+          <button class="badge bg-danger">&times;</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bg-dark text-center text-light">
+    <p><strong>Footer&copy;</strong></p>
+    <ul class="footer-links d-flex align-items-center justify-content-center">
+      <li class="footer-item" *ngFor="let link of links">
+        <h5 class="me-3">{{ link.name }}</h5>
+      </li>
+    </ul>
+  </div>
+</div>

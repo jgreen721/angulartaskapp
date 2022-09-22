@@ -1,0 +1,30 @@
+{
+    "users":[
+        {"id":1,"username":"admin","password":"adminpriv","email":"admin@site.com"},
+
+        {"id":2,"username":"brat","password":"booba123","email":"brat91@gmail.com"},
+        {"id":3,"username":"justin","password":"passwd123","email":"jgreen81@gmail.com"},
+        {"id":4,"username":"vic","password":"sunswin123","email":"nashHOF85@gmail.com"}
+    ],
+    "tasks":[
+        {"id":1,"task":"create a json-file DB mockup","is_complete":false,"score":7,"userId":3},
+        {"id":2,"task":"created a token/authentication system","is_complete":true,"score":8,"userId":3},
+        {"id":3,"task":"stock 7/11 cooler","is_complete":false,"score":5,"userId":2},
+        {"id":4,"task":"cook food for guests","is_complete":true,"score":5,"userId":4},
+        {"id":5,"task":"clean off trail to the lodge","is_complete":false,"score":9,"userId":4},
+        {"id":6,"task":"learn pointers/structs","is_complete":true,"score":8,"userId":3},
+        {"id":7,"task":"check out gear shop","is_complete":true,"score":7,"userId":4},
+        {"id":8,"task":"make it to doctors appt","is_complete":false,"score":7,"userId":2},
+        {"id":9,"task":"train on campus rungs","is_complete":false,"score":6,"userId":3},
+        {"id":10,"task":"morning jog","is_complete":true,"score":3,"userId":3},
+        {"id":11,"task":"clean kitchen/fridge","is_complete":false,"score":8,"userId":2},
+        {"id":12,"task":"find parkingspace","is_complete":true,"score":4,"userId":2},
+        {"id":13,"task":"make pizza ordering app in C","is_complete":true,"score":10,"userId":3},
+        {"id":14,"task":"buy some weed","is_complete":false,"score":2,"userId":3},
+        {"id":15,"task":"assign functions to app","is_complete":false,"score":9,"userId":3},
+        {"id":16,"task":"work on projects at 'milks","is_complete":false,"score":5,"userId":4},
+        {"id":17,"task":"cash in scratch tickets","is_complete":true,"score":3,"userId":2},
+        {"id":18,"task":"create redirects on guarded routes","is_complete":false,"score":4,"userId":3},
+        {"id":19,"task":"organize food shelves","is_complete":false,"score":4,"userId":2}
+    ]
+}
